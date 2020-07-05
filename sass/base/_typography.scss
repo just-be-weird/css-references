@@ -1,0 +1,93 @@
+/* -- Headings -- */
+
+body {
+    color: $color-grey-dark;
+    font-family: "Lato", 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    /* 1.7 means 1.7 times of defualt value */
+}
+
+.heading-primary {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* for hiding shakey animation*/
+    color: $color-white;
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+
+    &--main {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-name: moveInLeft;
+        animation-name: moveInLeft;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+        /*
+        animation-iteration-count: 3;
+        animation-delay: 3s;
+        */
+    }
+    
+    &--sub {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-name: moveInRight;
+        animation-name: moveInRight;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+    }
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
