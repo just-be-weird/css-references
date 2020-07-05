@@ -1,0 +1,21 @@
+/* ----- LINKS ----- */
+
+a {
+
+    &:link,
+    &:visited {
+        border-bottom: 1px solid $primary-orange;
+        color: $primary-orange;
+        font-size: 1.8rem;
+        padding-bottom: .2rem;
+        text-decoration: none;
+        -webkit-transition: border-bottom .2s, color .2s;
+        transition: border-bottom .2s, color .2s;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-dark-grey;
+        border-bottom: 1px solid transparent;
+    }
+}

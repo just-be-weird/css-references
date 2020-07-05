@@ -1,0 +1,31 @@
+/* -- Reset -- */
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+// to hide borders of dropdowns and selects
+*:focus {
+    outline: none
+}
+
+/* -- everything related to font should be part of body not * -- */
+html {
+    font-size: 62.5%;
+    /* to set rem as unit*/
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Its better practice to keep it on body then inherit to all by using universal selector @line16
+        
+        ---- As box-sizing property is not inherited itself --------
+        
+        so by doing this we are forcing to all the elemets to inherit it whatever is set on body
+    */
+}

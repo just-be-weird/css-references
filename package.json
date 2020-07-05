@@ -1,0 +1,14 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "description": "Quick References For CSS",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/assets/sass/main.scss src/assets/css/style.css -w"
+  },
+  "author": "Abhishek P",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

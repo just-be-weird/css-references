@@ -1,0 +1,42 @@
+.section-testimonials {
+    background-attachment: fixed;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.79)),to(rgba(0, 0, 0, 0.79))), url(../images/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.79),rgba(0, 0, 0, 0.79)), url(../images/back-customers.jpg);
+    background-size: cover;
+    color: $color-white;
+}
+
+blockquote {
+    font-size: 1.8rem;
+    font-style: italic;/*we have downloaded italick font so we are using it*/
+    line-height: 140%;
+    padding: 2%;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201c";
+    display: block;
+    font-size: 7rem;
+    position: absolute;
+    top: .4rem;
+    left: -.9rem;
+}
+/* Note:
+    If any element is "absolute" positioned, we need to
+    make sure that its parent is "RELATIVE" positioned.
+*/
+cite {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+}
+
+
+cite img {
+    border-radius: 50%;
+    height: 4.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    width: 4.5rem;
+}

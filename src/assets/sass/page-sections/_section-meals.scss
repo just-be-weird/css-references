@@ -1,0 +1,42 @@
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meals-photo {
+    background: $color-black;
+    margin: 0;
+    overflow: hidden;
+    /* as images are scaled up to 1.5 using transform its overflowing outside parent container so use this to hide that*/
+    width: 100%;
+}
+
+/* imp img rules*/
+
+.meals-photo img {
+    height: auto;
+    opacity: .7;
+    width: 100%;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    transition: opacity .5s, -webkit-transform .5s;
+    transition: transform .5s, opacity .5s;
+    transition: transform .5s, opacity .5s, -webkit-transform .5s;
+}
+
+.meals-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+}

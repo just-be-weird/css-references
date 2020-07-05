@@ -1,0 +1,64 @@
+/* ----- BUTTONS ----- */
+input[type="submit"] {
+    border: .1rem solid $primary-orange;
+    border-radius: 3rem;
+    color: $color-white;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-right: 2rem;
+    padding: 2rem 6rem;
+    text-decoration: none;
+    -webkit-transition: background-color .2s, border .2s, color .2s;
+    transition: background-color .2s, border .2s, color .2s;
+
+    &:hover {
+        background-color: $primary-orange-dark;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $primary-orange-dark;
+    }
+}
+
+.btn {
+
+    &:link,
+    &:visited {
+        @extend input[type="submit"];
+    }
+
+    &:hover,
+    &:active {
+        @extend input[type="submit"]:hover;
+    }
+
+    &-full {
+        &:link,
+        &:visited {
+            background-color: $primary-orange;
+            color: $color-white;
+            margin-right: 2rem;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $primary-orange-dark;
+        }
+    }
+
+    &-ghost {
+
+        &:link,
+        &:visited {
+            color: $primary-orange;
+        }
+
+        &:hover,
+        &:active {
+            border: .1rem solid $primary-orange-dark;
+            color: $color-white;
+        }
+    }
+}

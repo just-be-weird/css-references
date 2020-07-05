@@ -1,0 +1,55 @@
+.section-plans {
+    background-color: $color-light-grey;
+}
+
+.plan-box {
+    background-color: $color-white;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0 .2rem .2rem $color-medium-grey;
+            box-shadow: 0 .2rem .2rem $color-medium-grey;
+    margin: 0 auto;
+    width: 90%;
+}
+.plan-box .plan-type,
+.plan-box .plan-cons {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 3.6rem;
+}
+
+.plan-box .plan-type {
+    background-color: #fcfcfc;
+    border-top-left-radius: .5rem;/* as color of this element is white its hiding its parent and overlapping border radius of parent with sharpe edges hence we need border radius*/
+    border-top-right-radius: .5rem;
+}
+.plan-price {
+    color: $primary-orange ;
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.plan-box .plan-enroll {
+    padding: 1.8rem;
+    text-align: center;
+}
+
+.plan-enroll .btn:link,
+.plan-enroll .btn:visited {
+    padding: 1.5rem 4.5rem;
+}
+.plan-price span {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 1.6rem;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li{
+    font-size: 1.8rem;
+    line-height: 145%;
+}
